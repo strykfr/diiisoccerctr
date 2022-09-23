@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr 30px;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* News & Rankings Area  */
+
+h1 {
+    grid-area: 1 / 1 / 2 / 3 ;
+    background-color: lightgray;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    color: black;
+    margin:5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+
+    height: 50px;
+    background-color: gray;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+div, a {
+    font-size: 20px;
+    margin: 10px;
+    color: #ffffff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr 30%;
+    justify-items: center;
+    align-items: center;
+
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+aside {
+    background-color: darkgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav, footer {
+    grid-column: span 2;
+ }
+
+ol {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#main-img1 {
+    grid-area: 2 / 1 / 3 / 2;
+ 
+
+    height: 400px;
+}
+
+#main-img2 {
+    grid-area: 2 / 2 / 3 / 3;
+
+
+    height: 400px;
+}
+
+#main-img3 {
+    grid-area: 2 / 3 / 3 / 4;
+
+    height: 400px;
+}
+
+#main-txt1 {
+    grid-area: 3 / 1 / 4 / 2;
+    
+    text-align: center;
+    margin: 100px;
+}
+
+#main-txt2 {
+    grid-area: 3 / 2 / 4 / 3;
+
+    text-align: center;
+    margin: 100px;
+}
+
+#main-txt3 {
+    grid-area: 3 / 3 / 4 / 4;
+
+    text-align: center;
+    margin: 100px;
+}
+
+
+/* Schedule, Stats, Form Area */
+
+#schedule {
+    grid-area: 4 / 1 / 5 / 3;
+
+    background-color:dimgray;
+    text-align: center;
+}
+
+#scroll-up {
+    font-size: small;
+}
+
+#stats {
+    grid-area: 5 / 1 / 6 / 3;
+
+    background-color:dimgray;
+    text-align: center;
+}
+
+#form {
+    grid-area: 6 / 1 / 7 / 3;
+
+    background-color:dimgray;
+    text-align: center;
+}
