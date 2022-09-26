@@ -13,10 +13,3 @@ form.addEventListener('submit', (event) => {
         document.querySelector('.invalid').style.display = 'block';
     }
 })
-
-// //nav work
-// const hamburgerIcon = document.querySelector('#hamburger-icon')
-
-// form.addEventListener('click', (event) => {
-//     console.log(hamburgerIcon);
-// })
