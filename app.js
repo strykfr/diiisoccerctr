@@ -2,6 +2,7 @@
 const form = document.querySelector('form')
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+    document.querySelector('.invalid').style.display = 'none';
     const fullName = document.querySelector('#full-name').value;
     const email = document.querySelector('#email').value;
     console.log(fullName);
