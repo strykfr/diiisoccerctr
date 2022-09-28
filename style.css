@@ -286,6 +286,10 @@ ul {
     justify-content: space-evenly;
 }
 
+#link1, #link2 {
+    color: blue;
+}
+
 /* Form Section */
 
 #form {
